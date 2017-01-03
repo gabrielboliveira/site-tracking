@@ -1,16 +1,22 @@
 # site-tracking
 
-Site para rastrear os pacotes do correios
+Site para rastrear os pacotes do correios. Utiliza [rest-tracking](https://github.com/gabrielboliveira/rest-tracking) para obter os resultados, pois a API SOAP do Correios não permite _cors_. Também utiliza o pacote [tracking-correios](https://github.com/gabrielboliveira/tracking-correios) para validar os códigos de rastreio.
 
-## Build Setup
+Desenvolvido com [Vue.js](https://vuejs.org/) e [Bulma](http://bulma.io/), iniciado com o template [webpack-simple](https://github.com/vuejs-templates/webpack-simple).
 
-``` bash
-# install dependencies
-npm install
+## Passos
 
-# serve with hot reload at localhost:8080
-npm run dev
+```sh
+# instalar
+$ npm install
 
-# build for production with minification
-npm run build
+# desenvolvimento
+$ npm run dev
+
+# compilar para produção
+$ npm run build
 ```
+
+## Licença
+
+[MIT](LICENSE.md)
