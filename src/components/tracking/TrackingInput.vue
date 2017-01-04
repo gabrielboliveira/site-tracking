@@ -19,10 +19,10 @@
         </div>
         <div class="column is-narrow">
             <span
-                class="icon"
+                class="icon is-large"
                 :class="{ 'is-disabled': ! isValid }"
                 @click="addTracker">
-                <icon name="plus-square" scale="2.8"></icon>
+                <icon name="plus-square" scale="3"></icon>
             </span>
         </div>
     </div>
