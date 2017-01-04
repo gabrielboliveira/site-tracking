@@ -14,7 +14,7 @@
 import AppHeader from './components/Header.vue'
 import AppTrackingSection from './components/tracking/TrackingSection.vue'
 import AppFooter from './components/Footer.vue'
-import fontAwesome from 'font-awesome-webpack2'
+import 'vue-awesome/icons'
 
 export default {
     components: {

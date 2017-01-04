@@ -9,7 +9,9 @@
             <table class="table is-bordered is-striped is-marginless" v-if="trackingData.evento">
                 <tbody v-for="trackEvent in trackingData.evento">
                     <tr>
-                        <td class="is-icon is-large" rowspan="2"><i class="fa fa-address-book"></i></td>
+                        <td class="is-icon" rowspan="2">
+                            <icon name="address-book" scale="3"></icon>
+                        </td>
                         <td colspan="2">{{trackEvent.descricao}}</td>
                     </tr>
                     <tr>
@@ -24,6 +26,7 @@
 
 <script>
 import some from 'lodash.some'
+import Icon from 'vue-awesome/components/Icon.vue'
 
 export default {
     props: {
@@ -39,6 +42,9 @@ export default {
                 return ['BDE', 'BDI', 'BDR'].indexOf(event.tipo) > -1 && parseInt(event.status) < 2
             })
         }
+    },
+    components: {
+        Icon
     }
 }
 </script>
