@@ -27,14 +27,18 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules(?![\\/]vue-awesome[\\/])/
       },
       {
-        test: /\.(png|jpg|gif|svg|eot)$/,
+        test: /\.(png|jpg|gif)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.(woff|woff2|ttf|eot|svg)(\?v=[a-z0-9]\.[a-z0-9]\.[a-z0-9])?$/,
+        loader: "url-loader?limit=10000&mimetype=application/font-woff"
       }
     ]
   },

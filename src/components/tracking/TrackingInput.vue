@@ -19,10 +19,10 @@
         </div>
         <div class="column is-narrow">
             <span
-                class="icon is-large"
+                class="icon"
                 :class="{ 'is-disabled': ! isValid }"
                 @click="addTracker">
-                <i class="fa fa-plus-square"></i>
+                <icon name="plus-square" scale="2.8"></icon>
             </span>
         </div>
     </div>
@@ -30,6 +30,7 @@
 
 <script>
 import { isValid } from 'tracking-correios'
+import Icon from 'vue-awesome/components/Icon.vue'
 
 export default {
     data() {
@@ -48,6 +49,9 @@ export default {
         isValid () {
             return isValid(this.tracking)
         }
+    },
+    components: {
+        Icon
     }
 }
 </script>

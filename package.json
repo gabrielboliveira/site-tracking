@@ -1,7 +1,7 @@
 {
   "name": "site-tracking",
   "description": "Site para rastrear os pacotes do correios",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Gabriel Oliveira",
   "license": "MIT",
   "repository": {
@@ -17,10 +17,10 @@
   },
   "dependencies": {
     "bulma": "^0.2.3",
-    "font-awesome": "^4.7.0",
     "lodash.some": "^4.6.0",
     "tracking-correios": "^1.0.4",
     "vue": "^2.1.0",
+    "vue-awesome": "^2.0.3",
     "vue-resource": "^1.0.3"
   },
   "devDependencies": {
@@ -32,6 +32,7 @@
     "file-loader": "^0.9.0",
     "node-sass": "^4.1.1",
     "sass-loader": "^4.1.1",
+    "url-loader": "^0.5.7",
     "vue-loader": "^10.0.0",
     "vue-template-compiler": "^2.1.0",
     "webpack": "^2.1.0-beta.25",
