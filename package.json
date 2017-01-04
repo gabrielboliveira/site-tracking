@@ -1,7 +1,7 @@
 {
   "name": "site-tracking",
   "description": "Site para rastrear os pacotes do correios",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Gabriel Oliveira",
   "license": "MIT",
   "repository": {
