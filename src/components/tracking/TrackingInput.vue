@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style lang="sass">
-@import "~bulma/sass/utilities/variables.sass"
+@import "~bulma/sass/utilities/_all.sass"
 
 .icon
     cursor: pointer
